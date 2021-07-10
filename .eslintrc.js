@@ -1,33 +1,33 @@
 module.exports = {
   env: {
-    browser: true,
-    es2021: true,
+    node: true,
+    es2020: true,
   },
   extends: [
     'airbnb',
   ],
   overrides: [
     {
-      files: ['*.test.ts'],
+      files: ['test/*.ts'],
       env: {
         mocha: true,
       },
     },
   ],
-  settings: {
-    'import/resolver': {
-      node: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
-      },
-      typescript: {},
-    },
-  },
-  ignorePatterns: ['.eslintrc.js'],
+  // settings: {
+  //   'import/resolver': {
+  //     node: {
+  //       extensions: ['.js', '.jsx', '.ts', '.tsx'],
+  //     },
+  //     typescript: {},
+  //   },
+  // },
+  // ignorePatterns: ['.eslintrc.js'],
   parser: '@typescript-eslint/parser',
-  parserOptions: {
-    ecmaVersion: 12,
-    sourceType: 'module',
-  },
+  // parserOptions: {
+  //   ecmaVersion: 12,
+  //   sourceType: 'module',
+  // },
   plugins: [
     '@typescript-eslint',
   ],
