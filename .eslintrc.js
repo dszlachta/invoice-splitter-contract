@@ -34,6 +34,7 @@ module.exports = {
     rules: {
         indent: ['error', 4],
         'import/no-extraneous-dependencies': 'off',
+        'max-len': 'off',
         'no-use-before-define': 'off',
         '@typescript-eslint/no-use-before-define': ['error'],
         'import/prefer-default-export': 'off',
